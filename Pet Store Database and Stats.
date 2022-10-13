@@ -1,0 +1,26 @@
+CREATE TABLE store (id INTEGER PRIMARY KEY, pet TEXT, animal TEXT, price INTEGER, popularity INTEGER);
+
+INSERT INTO store VALUES (1, "yorkie", "dog", 770, 95);
+INSERT INTO store VALUES (2, "Birman", "cat", 100, 70);
+INSERT INTO store VALUES (3, "Doberman", "dog", 60, 20);
+INSERT INTO store VALUES (4, "Red Fin Tetra", "fish", 4, 10);
+INSERT INTO store VALUES (5, "Goldfish", "fish", 10, 100);
+INSERT INTO store VALUES (6, "Maltese", "dog", 600, 86);
+INSERT INTO store VALUES (7, "Sphynx", "cat", 900, 40);
+INSERT INTO store VALUES (8, "Persian", "cat", 200, 20);
+INSERT INTO store VALUES (9, "Bettas", "fish", 9, 100);
+INSERT INTO store VALUES (10, "Pleco", "fish", 15, 50);
+INSERT INTO store VALUES (11, "Zebra Danios", "fish", 25, 75);
+INSERT INTO store VALUES (12, "Dardanus", "crab", 17, 30);
+INSERT INTO store VALUES (13, "Pargurus", "crab", 18, 66);
+INSERT INTO store VALUES (14, "Coconut", "crab", 23, 90);
+INSERT INTO store VALUES (15, "Bulldog", "dog", 400, 80);
+
+SELECT * FROM store
+ORDER by price desc;
+
+--What are the most popular pet?
+SELECT pet, price, popularity FROM store order by popularity desc limit 3;
+
+
+
